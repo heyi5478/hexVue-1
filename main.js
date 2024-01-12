@@ -56,8 +56,25 @@ createApp({
             "https://images.unsplash.com/flagged/photo-1557234985-425e10c9d7f1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxjYWtlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
             "https://images.unsplash.com/photo-1540337706094-da10342c93d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGNha2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
           ]
+        },
+        {
+          category: "布丁",
+          content: "尺寸：7cm",
+          description: "無論您喜好香草的清新、巧克力的濃郁還是焦糖的甜美，我們的布丁系列滿足您的每一種味蕾渴望。品味風味的多樣性，品味生活的豐富。",
+          id: "-McJ-VyqaFlLzUMm",
+          is_enabled: 2,
+          origin_price: 100,
+          price: 89,
+          title: "草莓布丁",
+          unit: "個",
+          num: 15,
+          imageUrl: "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          imagesUrl: [
+            "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1560180474-e8563fd75bab?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          ]
         }
-      ], 
+      ],
       tempProduct: {},
     }
   },
