@@ -6,78 +6,47 @@ import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
 createApp({
   data() {
     return {
-      products: [
-        {
-          category: "甜甜圈",
-          content: "尺寸：14x14cm",
-          description: "濃郁的草莓風味，中心填入滑順不膩口的卡士達內餡，帶來滿滿幸福感！",
-          id: "-L9tH8jxVb2Ka_DYPwng",
-          is_enabled: 1,
-          origin_price: 150,
-          price: 99,
-          title: "草莓莓果夾心圈",
-          unit: "個",
-          num: 10,
-          imageUrl: "https://images.unsplash.com/photo-1583182332473-b31ba08929c8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGRvbnV0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
-          imagesUrl: [
-            "https://images.unsplash.com/photo-1626094309830-abbb0c99da4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2832&q=80",
-            "https://images.unsplash.com/photo-1559656914-a30970c1affd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY0fHxkb251dHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
-          ]
-        },
-        {
-          category: "蛋糕",
-          content: "尺寸：6寸",
-          description: "蜜蜂蜜蛋糕，夾層夾上酸酸甜甜的檸檬餡，清爽可口的滋味讓人口水直流！",
-          id: "-McJ-VvcwfN1_Ye_NtVA",
-          is_enabled: 16,
-          origin_price: 1000,
-          price: 900,
-          title: "蜂蜜檸檬蛋糕",
-          unit: "個",
-          num: 1,
-          imageUrl: "https://images.unsplash.com/photo-1627834377411-8da5f4f09de8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80",
-          imagesUrl: [
-            "https://images.unsplash.com/photo-1618888007540-2bdead974bbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80",
-          ]
-        },
-        {
-          category: "蛋糕",
-          content: "尺寸：6寸",
-          description: "法式煎薄餅加上濃郁可可醬，呈現經典的美味及口感。",
-          id: "-McJ-VyqaFlLzUMmpPpm",
-          is_enabled: 1,
-          origin_price: 700,
-          price: 600,
-          title: "暗黑千層",
-          unit: "個",
-          num: 15,
-          imageUrl: "https://images.unsplash.com/photo-1505253149613-112d21d9f6a9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGNha2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
-          imagesUrl: [
-            "https://images.unsplash.com/flagged/photo-1557234985-425e10c9d7f1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxjYWtlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
-            "https://images.unsplash.com/photo-1540337706094-da10342c93d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGNha2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
-          ]
-        },
-        {
-          category: "布丁",
-          content: "尺寸：7cm",
-          description: "無論您喜好香草的清新、巧克力的濃郁還是焦糖的甜美，我們的布丁系列滿足您的每一種味蕾渴望。品味風味的多樣性，品味生活的豐富。",
-          id: "-McJ-VyqaFlLzUMm",
-          is_enabled: 2,
-          origin_price: 100,
-          price: 89,
-          title: "草莓布丁",
-          unit: "個",
-          num: 15,
-          imageUrl: "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          imagesUrl: [
-            "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1560180474-e8563fd75bab?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          ]
-        }
-      ],
+      apiUrl: 'https://vue3-course-api.hexschool.io/v2',
+      apiPath: 'hexvue',
+      products: [],
       tempProduct: {},
     }
   },
+  methods: {
+    checkAdmin() {
+      const url = `${this.apiUrl}/api/user/check`;
+      axios.post(url)
+      .then(() => {
+        this.getdata;
+      })
+      .catch(() => {
+        alert(err.respone.data.message);
+        window.location = "login.html";
+      })
+    },
+
+    getdata() {
+      const url = `${this.apiUrl}/api/${this.apiPath}/admin/products`;
+      axios.get(url)
+        .then((response) => {
+          this.products = response.data.products;
+        })
+        .catch((err) => {
+          alert(err.respone.data.message);
+        })
+    },
+
+    openProduct(item) {
+      this.tempProduct = item;
+    }
+  },
+  mounted() {
+    // 取出 Token
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)vueToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+    axios.defaults.headers.common.Authorization = token;
+
+    this.checkAdmin()
+  }
 
 }).mount("#app");
 
