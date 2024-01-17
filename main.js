@@ -28,8 +28,8 @@ createApp({
     getdata() {
       const url = `${this.apiUrl}/api/${this.apiPath}/admin/products`;
       axios.get(url)
-        .then((response) => {
-          this.products = response.data.products;
+        .then((res) => {
+          this.products = res.data.products;
         })
         .catch((err) => {
           alert(err.respone.data.message);
