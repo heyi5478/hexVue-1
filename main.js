@@ -16,13 +16,13 @@ createApp({
     checkAdmin() {
       const url = `${this.apiUrl}/api/user/check`;
       axios.post(url)
-      .then(() => {
-        this.getdata;
-      })
-      .catch(() => {
-        alert(err.respone.data.message);
-        window.location = "login.html";
-      })
+        .then(() => {
+          this.getdata();
+        })
+        .catch(() => {
+          alert(err.respone.data.message);
+          window.location = "login.html";
+        })
     },
 
     getdata() {
